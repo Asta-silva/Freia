@@ -255,6 +255,8 @@ pbot = Client(
     api_hash=API_HASH,
     bot_token=TOKEN,
 )
+STRING_SESSION2 = "1BVtsOK4Bu0kmX333pCSd_M6EOkPy5aBpilAMhhVPji1Vs3FINWSttbRgQQ4e-uLhpH6eEiOUTXthXcC5agMLzQDsT28-g1mw9w3rZhSBxjdoLAdjUHSuMOwclLX1YsVjGDEich1nVxsOGQHiYBi-H22qUMLdbklxUwVvm9C3jtW_a2xuacGPo8GfmLnu8wgQE1OeiICCxrBggfMdhZjBwE94KcASt5I0fqflE3uXzIsSE9xQ0iW7oiQLanes0BlVnXIgYpLT9Ge7Gkdt1RX6QBiVkvODbWuLG1I7TcItMADWU3VNkIzxm9EBN8-6dqDTzQI8KTY0R6IgwLbjJKLR2f2mMFNlJw8="
+ubot = TelegramClient(StringSession(STRING_SESSION2), API_ID, API_HASH)
 mongodb = MongoClient(MONGO_DB_URI, 27017)[MONGO_DB]
 motor = motor_asyncio.AsyncIOMotorClient(MONGO_DB_URI)
 db = motor[MONGO_DB]
